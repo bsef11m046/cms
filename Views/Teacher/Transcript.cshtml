@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "Transcript";
+}
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>CSS3_trees</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="~/content/stylo.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+     @{Layout = "~/Views/Shared/Teacher_layout.cshtml";}
+<body>
+  <div id="main">
+    
+    <div id="site_content">
+      <div id="sidebar_container">
+        <div class="sidebar">
+          <h3>Latest News</h3>
+          <h4>New Website Launched</h4>
+          <h5>January 1st, 2013</h5>
+          <p>2013 sees the redesign of our website. <a href="#">Read more</a></p>
+        </div>
+        <div class="sidebar">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">First Link</a></li>
+            <li><a href="#">Another Link</a></li>
+            <li><a href="#">And Another</a></li>
+            <li><a href="#">Last One</a></li>
+          </ul>
+        </div>
+      
+      </div>
+      <div class="content">
+        <h1>View Transcript</h1>
+        <h2>Particular Semester</h2>
+        <form action="partTrans" method="post">
+          <div class="form_settings">
+              <p><span>Enter Student Name</span><input type="text" name="Sname" value="" /></p>
+              <p><span>Enter Semester Number</span><input type="text" name="sem" value="" /></p>
+              <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="name" value="Show" /></p>
+              </div>
+            </form>
+          <h2><a href="/Teacher/Atrans">View Complete</h2>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="~/images/top.png" alt="top" /></a>
+    </div>
+ 
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="~/scripts/jquery.js"></script>
+  <script type="text/javascript" src="~/scripts/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="~/scripts/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>
+

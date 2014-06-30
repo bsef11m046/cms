@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body> 
+  
+     <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="#">Student<span class="logo_colour">_Management_System</span></a></h1>
+          <i><h2>Exploring new ways of CMS</h2></i>
+        </div>
+      </div>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="Student/index">Home</a></li>
+            <li><a href="Student/Attendance">Attendance</a></li>
+            <li><a href="Student/Assignment">Assignment</a></li>
+            <li><a href="Student/change_paswd">Account Management</a>
+                 <ul>
+                <li><a href="Student/change_paswd">Change Password</a></li>
+                
+                  </ul>
+            </li>
+            <li><a href="Student/transcript">View Transcript</a>
+              <ul>
+                <li><a href="#">Current Month</a></li>
+                <li><a href="#">All</a>
+                 @* <ul>
+                    <li><a href="#">Sub Drop Down One</a></li>
+                    <li><a href="#">Sub Drop Down Two</a></li>
+                    <li><a href="#">Sub Drop Down Three</a></li>
+                    <li><a href="#">Sub Drop Down Four</a></li>
+                    <li><a href="#">Sub Drop Down Five</a></li>
+                  </ul>*@
+                </li>
+                @*<li><a href="#">Drop Down Four</a></li>
+                <li><a href="#">Drop Down Five</a></li>*@
+              </ul>
+            </li>
+               <li><a href="Login/index">Log out</a></li>
+           
+          </ul>
+        </div>
+      </nav>
+    </header>
+    @RenderBody()
+
+
+     <footer>
+    @*  <p><img src="~/images/twitter.png" alt="twitter" />&nbsp;<img src="~/images/facebook.png" alt="facebook" />&nbsp;<img src="~/images/rss.png" alt="rss" /></p>*@
+      <p><a href="index.html">Home</a> | <a href="examples.html">Account Management</a> | <a href="page.html">Log out</a> </p>
+      <p>Copyright &copy; Saba Baig | <u>BSEF11M046</u> | EAD Term Project</p>
+    </footer>
+        @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

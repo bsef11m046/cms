@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body> 
+  
+     <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Student<span class="logo_colour">_Management_System</span></a></h1>
+          <i><h2>Exploring new ways of CMS</h2></i>
+            
+        </div>
+      </div>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="Administrator/index">Home</a></li>
+            <li><a href="Administrator/config">Configuration</a></li>
+                 
+                <li><a href="Administrator/Amg">Account Management</a></li>
+                  
+            
+                  
+           
+          
+           <li><a href="Administrator/Results">Results</a></li>
+                 <ul>
+                <li><a href="#">View Results</a></li>
+                  <li><a href="#">Edit Results</a>
+            </li>
+                  </ul>
+          
+          
+           
+            
+               <li><a href="Login/index">Log out</a></li>
+           
+          
+        </div>
+      </nav>
+    </header>
+    @RenderBody()
+
+
+     <footer>
+    @*  <p><img src="~/images/twitter.png" alt="twitter" />&nbsp;<img src="~/images/facebook.png" alt="facebook" />&nbsp;<img src="~/images/rss.png" alt="rss" /></p>*@
+      <p><a href="Teacher/Search">Search</a> | <a href="#">Home</a> | <a href="page.html">Log out</a> </p>
+      <p>Copyright &copy; Saba Baig | <u>BSEF11M046</u> | EAD Term Project</p>
+    </footer>
+        @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

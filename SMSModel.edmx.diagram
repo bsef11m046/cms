@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="981e6abe4d3245a18dbb13faabb1ffc4" Name="Diagram1" >
+        <EntityTypeShape EntityType="SMSModel.Student" Width="1.5" PointX="4.75" PointY="0.875" />
+        <EntityTypeShape EntityType="SMSModel.Teacher" Width="1.5" PointX="7.125" PointY="1.75" />
+        <EntityTypeShape EntityType="SMSModel.Course" Width="1.5" PointX="9.375" PointY="2.375" />
+        <EntityTypeShape EntityType="SMSModel.Assignment" Width="1.5" PointX="11.625" PointY="1.5" />
+        <EntityTypeShape EntityType="SMSModel.CourseGrade" Width="1.5" PointX="12.25" PointY="4.125" />
+        <EntityTypeShape EntityType="SMSModel.Attendance" Width="1.5" PointX="14.125" PointY="3.125" />
+        <EntityTypeShape EntityType="SMSModel.Submission" Width="1.5" PointX="16.5" PointY="1" />
+        <AssociationConnector Association="SMSModel.StudentSubmission" />
+        <AssociationConnector Association="SMSModel.StudentAttendance" />
+        <AssociationConnector Association="SMSModel.StudentCourseGrade" />
+        <AssociationConnector Association="SMSModel.TeacherCourse" />
+        <AssociationConnector Association="SMSModel.TeacherSubmission" />
+        <AssociationConnector Association="SMSModel.CourseAssignment" />
+        <AssociationConnector Association="SMSModel.CourseCourseGrade" />
+        <AssociationConnector Association="SMSModel.CourseSubmission" />
+        <AssociationConnector Association="SMSModel.StudentCourse" />
+        <EntityTypeShape EntityType="SMSModel.Admin" Width="1.5" PointX="2.625" PointY="1.125" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
